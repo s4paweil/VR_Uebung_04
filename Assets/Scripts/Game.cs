@@ -12,13 +12,15 @@ using YamlDotNet.RepresentationModel;
 
 public class Game : MonoBehaviour
 {
-    public enum InstructionState {Introduce, Show, Input, Check};
+    public enum InstructionState {Show, Input, Check};
     public enum PlayerState {Alive, Dead};
 
     public Transform content;
     private GameObject _prefabGameObject;
 
     private AudioSource audioSource;
+
+    private bool introduce;
     
     
     float elapsed;
@@ -27,14 +29,14 @@ public class Game : MonoBehaviour
     private AudioClip Don;
 
     private int count;
-    private int len;
+
 
     private List<Phrase> _phraseList = new List<Phrase>();
     private List<Phrase> _introduced = new List<Phrase>();
     private PlayerState _playerState;
     private InstructionState _instructionState;
     private int _sequence_count;
-    private int _count;
+    private int _charIndex;
     private string _path;
     private string _title;
     private string _font;
@@ -44,7 +46,6 @@ public class Game : MonoBehaviour
         
         elapsed = 1f;
         count = 0;
-        len = 4;
         player = gameObject.AddComponent <AudioSource>() ;
         Katsu = Resources.Load<AudioClip>("Music/Effects/Katsu");
         Don = Resources.Load<AudioClip>("Music/Effects/Don");
@@ -73,10 +74,10 @@ public class Game : MonoBehaviour
 
     private void Pop()
     {
-        if (_count < _phraseList.Count)
+        if (_charIndex < _phraseList.Count)
         {
-            _introduced.Add(_phraseList[_count++]);
-            _instructionState = InstructionState.Introduce;
+            _introduced.Add(_phraseList[_charIndex++]);
+            _instructionState = InstructionState.Show;
         }
     }
     
@@ -89,6 +90,11 @@ public class Game : MonoBehaviour
                 elapsed = elapsed % 1f;
                 Metronome();
             }
+
+            if (elapsed < 0.3f || elapsed > 0.7f)
+            {
+                //GetInput();
+            }
         }
     }
     
@@ -96,56 +102,78 @@ public class Game : MonoBehaviour
     {
         switch (_instructionState)
         {
-            case InstructionState.Introduce:
-                HandleIntroduce();
-                break;
             case InstructionState.Show:
+                HandleShow();
                 break;
             case InstructionState.Input:
+                HandleInput();
                 break;
             case InstructionState.Check:
+                HandleCheck();
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
     }
+
     List<GameObject> _currentInstructionList = new List<GameObject>();
-    private void HandleIntroduce()
+    void Fill()
     {
-        
-        if(count <=3){
-            if (count == 0)
-            {
-                ClearContent();
-                for (int i = 0; i < 4; i++)
-                {
-                    var c = _introduced[_introduced.Count - 1];
-                    var a = Instantiate(_prefabGameObject, content);
-                    a.GetComponent<InstructionInput>().Set(c.characters, "", "", "", _path + c.sound,_fontAsset);
-                    _currentInstructionList.Add(a);
-                }
-            }
-            if (count < 3)
-            {
-                
-                //player.PlayOneShot(Katsu);
-            }
-            if (count == 3)
-            {
-               // player.PlayOneShot(Don);
-            }
-            _currentInstructionList[count].GetComponent<InstructionInput>().playSound();
-            _currentInstructionList[count].GetComponent<InstructionInput>().pulse();
+        ClearContent();
+        for (int i = 0; i < 4; i++)
+        {
+            var c = _introduced[_introduced.Count - 1];
+            var a = Instantiate(_prefabGameObject, content);
+            a.GetComponent<InstructionInput>().Set(c.characters, c.characters, c.characters, c.characters, _path + c.sound,_fontAsset);
+            _currentInstructionList.Add(a);
+        }
+
+        count = 0;
+    }
+
+    void HandleShow()
+    {
+        if (_currentInstructionList.Count <= 0)
+        {
+            Fill();
+        }
+
+        _currentInstructionList[count].GetComponent<InstructionInput>().playSound();
+        _currentInstructionList[count].GetComponent<InstructionInput>().pulse();
+        count++;
+        if (count >= _currentInstructionList.Count)
+        {
+            _instructionState = InstructionState.Input;
+            count = 0;
+        }
+
+    }
+    void HandleInput()
+    {
+        count++;
+        if (count >= _currentInstructionList.Count)
+        {
+            player.PlayOneShot(Don);
+            count = 0;
+            _instructionState = InstructionState.Check;
         }
         else
         {
-            
+            player.PlayOneShot(Katsu);
         }
-
-        count++;
-        
-        
     }
+    void HandleCheck()
+    {
+        _currentInstructionList[count].GetComponent<InstructionInput>().playSound();
+        _currentInstructionList[count].GetComponent<InstructionInput>().pulse();
+        count++;
+        if (count >= _currentInstructionList.Count)
+        {
+            _instructionState = InstructionState.Show;
+            count = 0;
+        }
+    }
+
 
     private void ClearContent()
     {

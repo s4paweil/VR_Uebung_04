@@ -4,10 +4,12 @@ using TMPro;
 using UI;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class InstructionInput : MonoBehaviour
 {
     private RectTransform _rectTransform;
+    private Image _higlight;
 
     private TextMeshProUGUI _l;
     private TextMeshProUGUI _t;
@@ -22,6 +24,7 @@ public class InstructionInput : MonoBehaviour
     void Awake()
     {
         _rectTransform = transform.GetComponent<RectTransform>();
+        _higlight = transform.Find("fx").Find("inner").GetComponent<Image>();
         _l = transform.Find("l").GetComponent<TextMeshProUGUI>();
         _t = transform.Find("t").GetComponent<TextMeshProUGUI>();
         _r = transform.Find("r").GetComponent<TextMeshProUGUI>();
@@ -35,7 +38,9 @@ public class InstructionInput : MonoBehaviour
         {
             _rectTransform.localScale =
                 Vector3.Lerp(_rectTransform.localScale, new Vector3(1.0f, 1.0f, 1.0f), Time.deltaTime);
+            _higlight.color = Color.Lerp(_higlight.color, Color.white, Time.deltaTime*2f);
         }
+
     }
 
     public void Set(string l, string t, string r, string b, string sound, TMP_FontAsset font)
@@ -56,6 +61,7 @@ public class InstructionInput : MonoBehaviour
     public void pulse()
     {
         _rectTransform.localScale = new Vector3(1.2f,1.2f,1.2f);
+        _higlight.color = Color.black;
     }
     
     

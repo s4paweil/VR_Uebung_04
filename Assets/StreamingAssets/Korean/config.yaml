@@ -85,7 +85,7 @@ Stages:
         roman: ui
     Single Consonants:
       - char: ㄱ
-        sound: /Soundfiles/Alphabet/gk.mp3
+        sound: /Soundfiles/Alphabet/k.mp3
         roman: g/k
       - char: ㄴ
         sound: /Soundfiles/Alphabet/n.mp3
