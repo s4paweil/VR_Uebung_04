@@ -1,0 +1,157 @@
+---
+Title: German
+Font: /Font/german.ttf
+---
+Stages:
+  Alphabet:
+    Single Vowels:
+      - char: ㅏ
+        sound: /alphabet/a.mp3
+        roman: a
+      - char: ㅓ
+        sound: /alphabet/eo.mp3
+        roman: eo
+      - char: ㅗ
+        sound: /alphabet/o.mp3
+        roman: o
+      - char: ㅜ
+        sound: /alphabet/u.mp3
+        roman: u
+      - char: ㅡ
+        sound: /alphabet/eu.mp3
+        roman: eu
+      - char: ㅣ
+        sound: /alphabet/i.mp3
+        roman: i
+      - char: ㅐ
+        sound: /alphabet/ae.mp3
+        roman: ae
+      - char: ㅔ
+        sound: /alphabet/e.mp3
+        roman: e
+    Complex Vowels:
+      - char: ㅑ
+        comb: ㅣ + ㅏ
+        sound: /alphabet/ya.mp3
+        roman: ya
+      - char: ㅕ
+        comb: ㅣ + ㅓ
+        sound: /alphabet/yeo.mp3
+        roman: yeo
+      - char: ㅛ
+        comb: ㅣ + ㅗ
+        sound: /alphabet/yo.mp3
+        roman: yo
+      - char: ㅠ
+        comb: ㅣ + ㅜ
+        sound: /alphabet/yu.mp3
+        roman: yu
+      - char: ㅒ
+        comb: ㅣ + ㅐ
+        sound: /alphabet/yae.mp3
+        roman: yae
+      - char: ㅖ
+        comb: ㅣ + ㅔ
+        sound: /alphabet/ye.mp3
+        roman: ye
+      - char: ㅘ
+        comb: ㅗ + ㅏ
+        sound: /alphabet/wa.mp3
+        roman: wa
+      - char: ㅚ
+        comb: ㅗ + ㅣ
+        sound: /alphabet/oe.mp3
+        roman: oe
+      - char: ㅙ
+        comb: ㅗ + ㅐ
+        sound: /alphabet/wae.mp3
+        roman: wae
+      - char: ㅝ
+        comb: ㅜ + ㅓ
+        sound: /alphabet/wo.mp3
+        roman: wo
+      - char: ㅟ
+        comb: ㅜ + ㅣ
+        sound: /alphabet/wi.mp3
+        roman: wi
+      - char: ㅞ
+        comb: ㅜ + ㅔ
+        sound: /alphabet/we.mp3
+        roman: we
+      - char: ㅢ
+        comb: ㅡ + ㅣ
+        sound: /alphabet/ui.mp3
+        roman: ui
+    Single Consonants:
+      - char: ㄱ
+        sound: /alphabet/gk.mp3
+        roman: g/k
+      - char: ㄴ
+        sound: /alphabet/n.mp3
+        roman: n
+      - char: ㄷ
+        sound: /alphabet/dt.mp3
+        roman: d/t
+      - char: ㄹ
+        sound: /alphabet/rl.mp3
+        roman: r/l
+      - char: ㅁ
+        sound: /alphabet/m.mp3
+        roman: m
+      - char: ㅂ
+        sound: /alphabet/bp.mp3
+        roman: b/p
+      - char: ㅅ
+        sound: /alphabet/s.mp3
+        roman: s
+      - char: ㅇ
+        sound: /alphabet/silent.mp3
+        roman: (silent)
+      - char: ㅈ
+        sound: /alphabet/j.mp3
+        roman: j
+      - char: ㅊ
+        sound: /alphabet/ch.mp3
+        roman: ch
+      - char: ㅋ
+        sound: /alphabet/k.mp3
+        roman: k
+      - char: ㅌ
+        sound: /alphabet/t.mp3
+        roman: t
+      - char: ㅍ
+        sound: /alphabet/p.mp3
+        roman: p
+      - char: ㅎ
+        sound: /alphabet/h.mp3
+        roman: h
+    Double Consonants:
+      - char: ㄲ
+        sound: /alphabet/kk.mp3
+        roman: kk
+      - char: ㄸ
+        sound: /alphabet/tt.mp3
+        roman: tt
+      - char: ㅃ
+        sound: /alphabet/pp.mp3
+        roman: pp
+      - char: ㅉ
+        sound: /alphabet/jj.mp3
+        roman: jj
+      - char: ㅆ
+        sound: /alphabet/ss.mp3
+        roman: ss
+  Words:
+    - char: ㅏㅏㅏㅏ
+      sound: /alphabet/aaaaa.mp3
+      roman: a
+      split:
+        - char: ㅏ
+          sound: /alphabet/a.mp3
+          roman: a
+        - char: ㅏ
+          sound: /alphabet/a.mp3
+          roman: a
+        - char: ㅏ
+          sound: /alphabet/a.mp3
+          roman: a

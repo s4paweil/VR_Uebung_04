@@ -1,0 +1,144 @@
+---
+Title: Korean
+Font: /Font/korean.ttf
+Description: Learn the Korean Alphabet
+---
+Stages:
+  Alphabet:
+    Single Vowels:
+      - char: ㅏ
+        sound: /Soundfiles/Alphabet/a.mp3
+        roman: a
+      - char: ㅓ
+        sound: /Soundfiles/Alphabet/eo.mp3
+        roman: eo
+      - char: ㅗ
+        sound: /Soundfiles/Alphabet/o.mp3
+        roman: o
+      - char: ㅜ
+        sound: /Soundfiles/Alphabet/u.mp3
+        roman: u
+      - char: ㅡ
+        sound: /Soundfiles/Alphabet/eu.mp3
+        roman: eu
+      - char: ㅣ
+        sound: /Soundfiles/Alphabet/i.mp3
+        roman: i
+      - char: ㅐ
+        sound: /Soundfiles/Alphabet/ae.mp3
+        roman: ae
+      - char: ㅔ
+        sound: /Soundfiles/Alphabet/e.mp3
+        roman: e
+    Complex Vowels:
+      - char: ㅑ
+        comb: ㅣ + ㅏ
+        sound: /Soundfiles/Alphabet/ya.mp3
+        roman: ya
+      - char: ㅕ
+        comb: ㅣ + ㅓ
+        sound: /Soundfiles/Alphabet/yeo.mp3
+        roman: yeo
+      - char: ㅛ
+        comb: ㅣ + ㅗ
+        sound: /Soundfiles/Alphabet/yo.mp3
+        roman: yo
+      - char: ㅠ
+        comb: ㅣ + ㅜ
+        sound: /Soundfiles/Alphabet/yu.mp3
+        roman: yu
+      - char: ㅒ
+        comb: ㅣ + ㅐ
+        sound: /Soundfiles/Alphabet/yae.mp3
+        roman: yae
+      - char: ㅖ
+        comb: ㅣ + ㅔ
+        sound: /Soundfiles/Alphabet/ye.mp3
+        roman: ye
+      - char: ㅘ
+        comb: ㅗ + ㅏ
+        sound: /Soundfiles/Alphabet/wa.mp3
+        roman: wa
+      - char: ㅚ
+        comb: ㅗ + ㅣ
+        sound: /Soundfiles/Alphabet/oe.mp3
+        roman: oe
+      - char: ㅙ
+        comb: ㅗ + ㅐ
+        sound: /Soundfiles/Alphabet/wae.mp3
+        roman: wae
+      - char: ㅝ
+        comb: ㅜ + ㅓ
+        sound: /Soundfiles/Alphabet/wo.mp3
+        roman: wo
+      - char: ㅟ
+        comb: ㅜ + ㅣ
+        sound: /Soundfiles/Alphabet/wi.mp3
+        roman: wi
+      - char: ㅞ
+        comb: ㅜ + ㅔ
+        sound: /Soundfiles/Alphabet/we.mp3
+        roman: we
+      - char: ㅢ
+        comb: ㅡ + ㅣ
+        sound: /Soundfiles/Alphabet/ui.mp3
+        roman: ui
+    Single Consonants:
+      - char: ㄱ
+        sound: /Soundfiles/Alphabet/gk.mp3
+        roman: g/k
+      - char: ㄴ
+        sound: /Soundfiles/Alphabet/n.mp3
+        roman: n
+      - char: ㄷ
+        sound: /Soundfiles/Alphabet/dt.mp3
+        roman: d/t
+      - char: ㄹ
+        sound: /Soundfiles/Alphabet/rl.mp3
+        roman: r/l
+      - char: ㅁ
+        sound: /Soundfiles/Alphabet/m.mp3
+        roman: m
+      - char: ㅂ
+        sound: /Soundfiles/Alphabet/bp.mp3
+        roman: b/p
+      - char: ㅅ
+        sound: /Soundfiles/Alphabet/s.mp3
+        roman: s
+      - char: ㅇ
+        sound: /Soundfiles/Alphabet/silent.mp3
+        roman: (silent)
+      - char: ㅈ
+        sound: /Soundfiles/Alphabet/j.mp3
+        roman: j
+      - char: ㅊ
+        sound: /Soundfiles/Alphabet/ch.mp3
+        roman: ch
+      - char: ㅋ
+        sound: /Soundfiles/Alphabet/k.mp3
+        roman: k
+      - char: ㅌ
+        sound: /Soundfiles/Alphabet/t.mp3
+        roman: t
+      - char: ㅍ
+        sound: /Soundfiles/Alphabet/p.mp3
+        roman: p
+      - char: ㅎ
+        sound: /Soundfiles/Alphabet/h.mp3
+        roman: h
+    Double Consonants:
+      - char: ㄲ
+        sound: /Soundfiles/Alphabet/kk.mp3
+        roman: kk
+      - char: ㄸ
+        sound: /Soundfiles/Alphabet/tt.mp3
+        roman: tt
+      - char: ㅃ
+        sound: /Soundfiles/Alphabet/pp.mp3
+        roman: pp
+      - char: ㅉ
+        sound: /Soundfiles/Alphabet/jj.mp3
+        roman: jj
+      - char: ㅆ
+        sound: /Soundfiles/Alphabet/ss.mp3
+        roman: ss
