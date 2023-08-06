@@ -4,154 +4,909 @@ Font: /Font/german.ttf
 ---
 Stages:
   Alphabet:
-    Single Vowels:
-      - char: ㅏ
-        sound: /alphabet/a.mp3
-        roman: a
-      - char: ㅓ
-        sound: /alphabet/eo.mp3
-        roman: eo
-      - char: ㅗ
-        sound: /alphabet/o.mp3
-        roman: o
-      - char: ㅜ
-        sound: /alphabet/u.mp3
-        roman: u
-      - char: ㅡ
-        sound: /alphabet/eu.mp3
-        roman: eu
-      - char: ㅣ
-        sound: /alphabet/i.mp3
-        roman: i
-      - char: ㅐ
-        sound: /alphabet/ae.mp3
-        roman: ae
-      - char: ㅔ
-        sound: /alphabet/e.mp3
-        roman: e
-    Complex Vowels:
-      - char: ㅑ
-        comb: ㅣ + ㅏ
-        sound: /alphabet/ya.mp3
-        roman: ya
-      - char: ㅕ
-        comb: ㅣ + ㅓ
-        sound: /alphabet/yeo.mp3
-        roman: yeo
-      - char: ㅛ
-        comb: ㅣ + ㅗ
-        sound: /alphabet/yo.mp3
-        roman: yo
-      - char: ㅠ
-        comb: ㅣ + ㅜ
-        sound: /alphabet/yu.mp3
-        roman: yu
-      - char: ㅒ
-        comb: ㅣ + ㅐ
-        sound: /alphabet/yae.mp3
-        roman: yae
-      - char: ㅖ
-        comb: ㅣ + ㅔ
-        sound: /alphabet/ye.mp3
-        roman: ye
-      - char: ㅘ
-        comb: ㅗ + ㅏ
-        sound: /alphabet/wa.mp3
-        roman: wa
-      - char: ㅚ
-        comb: ㅗ + ㅣ
-        sound: /alphabet/oe.mp3
-        roman: oe
-      - char: ㅙ
-        comb: ㅗ + ㅐ
-        sound: /alphabet/wae.mp3
-        roman: wae
-      - char: ㅝ
-        comb: ㅜ + ㅓ
-        sound: /alphabet/wo.mp3
-        roman: wo
-      - char: ㅟ
-        comb: ㅜ + ㅣ
-        sound: /alphabet/wi.mp3
-        roman: wi
-      - char: ㅞ
-        comb: ㅜ + ㅔ
-        sound: /alphabet/we.mp3
-        roman: we
-      - char: ㅢ
-        comb: ㅡ + ㅣ
-        sound: /alphabet/ui.mp3
-        roman: ui
-    Single Consonants:
-      - char: ㄱ
-        sound: /alphabet/gk.mp3
-        roman: g/k
-      - char: ㄴ
-        sound: /alphabet/n.mp3
-        roman: n
-      - char: ㄷ
-        sound: /alphabet/dt.mp3
-        roman: d/t
-      - char: ㄹ
-        sound: /alphabet/rl.mp3
-        roman: r/l
-      - char: ㅁ
-        sound: /alphabet/m.mp3
-        roman: m
-      - char: ㅂ
-        sound: /alphabet/bp.mp3
-        roman: b/p
-      - char: ㅅ
-        sound: /alphabet/s.mp3
-        roman: s
-      - char: ㅇ
-        sound: /alphabet/silent.mp3
-        roman: (silent)
-      - char: ㅈ
-        sound: /alphabet/j.mp3
-        roman: j
-      - char: ㅊ
-        sound: /alphabet/ch.mp3
-        roman: ch
-      - char: ㅋ
-        sound: /alphabet/k.mp3
-        roman: k
-      - char: ㅌ
-        sound: /alphabet/t.mp3
-        roman: t
-      - char: ㅍ
-        sound: /alphabet/p.mp3
-        roman: p
-      - char: ㅎ
-        sound: /alphabet/h.mp3
-        roman: h
-    Double Consonants:
-      - char: ㄲ
-        sound: /alphabet/kk.mp3
-        roman: kk
-      - char: ㄸ
-        sound: /alphabet/tt.mp3
-        roman: tt
-      - char: ㅃ
-        sound: /alphabet/pp.mp3
-        roman: pp
-      - char: ㅉ
-        sound: /alphabet/jj.mp3
-        roman: jj
-      - char: ㅆ
-        sound: /alphabet/ss.mp3
-        roman: ss
-  Words:
-    - char: ㅏㅏㅏㅏ
-      sound: /alphabet/aaaaa.mp3
+    - char: a
+      sound: /Soundfiles/Alphabet/a.mp3
       roman: a
+    - char: b
+      sound: /Soundfiles/Alphabet/b.mp3
+      roman: b
+    - char: c
+      sound: /Soundfiles/Alphabet/c.mp3
+      roman: c
+    - char: d
+      sound: /Soundfiles/Alphabet/d.mp3
+      roman: d
+    - char: e
+      sound: /Soundfiles/Alphabet/e.mp3
+      roman: e
+    - char: f
+      sound: /Soundfiles/Alphabet/f.mp3
+      roman: f
+    - char: g
+      sound: /Soundfiles/Alphabet/g.mp3
+      roman: g
+    - char: h
+      sound: /Soundfiles/Alphabet/h.mp3
+      roman: h
+    - char: i
+      sound: /Soundfiles/Alphabet/i.mp3
+      roman: i
+    - char: j
+      sound: /Soundfiles/Alphabet/j.mp3
+      roman: j
+    - char: k
+      sound: /Soundfiles/Alphabet/k.mp3
+      roman: k
+    - char: l
+      sound: /Soundfiles/Alphabet/l.mp3
+      roman: l
+    - char: m
+      sound: /Soundfiles/Alphabet/m.mp3
+      roman: m
+    - char: n
+      sound: /Soundfiles/Alphabet/n.mp3
+      roman: n
+    - char: o
+      sound: /Soundfiles/Alphabet/o.mp3
+      roman: o
+    - char: p
+      sound: /Soundfiles/Alphabet/p.mp3
+      roman: p
+    - char: q
+      sound: /Soundfiles/Alphabet/q.mp3
+      roman: q
+    - char: r
+      sound: /Soundfiles/Alphabet/r.mp3
+      roman: r
+    - char: s
+      sound: /Soundfiles/Alphabet/s.mp3
+      roman: s
+    - char: t
+      sound: /Soundfiles/Alphabet/t.mp3
+      roman: t
+    - char: u
+      sound: /Soundfiles/Alphabet/u.mp3
+      roman: u
+    - char: v
+      sound: /Soundfiles/Alphabet/v.mp3
+      roman: v
+    - char: w
+      sound: /Soundfiles/Alphabet/w.mp3
+      roman: w
+    - char: x
+      sound: /Soundfiles/Alphabet/x.mp3
+      roman: x
+    - char: y
+      sound: /Soundfiles/Alphabet/y.mp3
+      roman: y
+    - char: z
+      sound: /Soundfiles/Alphabet/z.mp3
+      roman: z
+    - char: ä
+      sound: /Soundfiles/Alphabet/ae.mp3
+      roman: ae
+    - char: ö
+      sound: /Soundfiles/Alphabet/oe.mp3
+      roman: oe
+    - char: ü
+      sound: /Soundfiles/Alphabet/ue.mp3
+      roman: ue
+    - char: ß
+      sound: /Soundfiles/Alphabet/sz.mp3
+      roman: sz
+  Words:
+    - char: aufstellen
+      sound: /Soundfiles/Words/aufstellen.mp3
+      roman: aufstellen
       split:
-        - char: ㅏ
-          sound: /alphabet/a.mp3
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
           roman: a
-        - char: ㅏ
-          sound: /alphabet/a.mp3
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: aussteigen
+      sound: /Soundfiles/Words/aussteigen.mp3
+      roman: aussteigen
+      split:
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
           roman: a
-        - char: ㅏ
-          sound: /alphabet/a.mp3
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: bezahlen
+      sound: /Soundfiles/Words/bezahlen.mp3
+      roman: bezahlen
+      split:
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: z
+          sound: /Soundfiles/Alphabet/z.mp3
+          roman: z
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
           roman: a
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: brauchen
+      sound: /Soundfiles/Words/brauchen.mp3
+      roman: brauchen
+      split:
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: c
+          sound: /Soundfiles/Alphabet/c.mp3
+          roman: c
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: dörfer
+      sound: /Soundfiles/Words/doerfer.mp3
+      roman: doerfer
+      split:
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: ö
+          sound: /Soundfiles/Alphabet/oe.mp3
+          roman: oe
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: dorf
+      sound: /Soundfiles/Words/dorf.mp3
+      roman: dorf
+      split:
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: o
+          sound: /Soundfiles/Alphabet/o.mp3
+          roman: o
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+
+    - char: einladen
+      sound: /Soundfiles/Words/einladen.mp3
+      roman: einladen
+      split:
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: entschuldigen
+      sound: /Soundfiles/Words/entschuldigen.mp3
+      roman: entschuldigen
+      split:
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: c
+          sound: /Soundfiles/Alphabet/c.mp3
+          roman: c
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: erscheinen
+      sound: /Soundfiles/Words/erscheinen.mp3
+      roman: erscheinen
+      split:
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: c
+          sound: /Soundfiles/Alphabet/c.mp3
+          roman: c
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: flughafen
+      sound: /Soundfiles/Words/flughafen.mp3
+      roman: flughafen
+      split:
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: hausaufgabe
+      sound: /Soundfiles/Words/hausaufgabe.mp3
+      roman: hausaufgabe
+      split:
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+
+    - char: ingenieur
+      sound: /Soundfiles/Words/ingenieur.mp3
+      roman: ingenieur
+      split:
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: klassenzimmer
+      sound: /Soundfiles/Words/klassenzimmer.mp3
+      roman: klassenzimmer
+      split:
+        - char: k
+          sound: /Soundfiles/Alphabet/k.mp3
+          roman: k
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: z
+          sound: /Soundfiles/Alphabet/z.mp3
+          roman: z
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: kühe
+      sound: /Soundfiles/Words/kuehe.mp3
+      roman: kuehe
+      split:
+        - char: k
+          sound: /Soundfiles/Alphabet/k.mp3
+          roman: k
+        - char: ü
+          sound: /Soundfiles/Alphabet/ue.mp3
+          roman: ue
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+
+    - char: kuh
+      sound: /Soundfiles/Words/kuh.mp3
+      roman: kuh
+      split:
+        - char: k
+          sound: /Soundfiles/Alphabet/k.mp3
+          roman: k
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+
+    - char: maenner
+      sound: /Soundfiles/Words/maenner.mp3
+      roman: maenner
+      split:
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: mann
+      sound: /Soundfiles/Words/mann.mp3
+      roman: mann
+      split:
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: mitbringen
+      sound: /Soundfiles/Words/mitbringen.mp3
+      roman: mitbringen
+      split:
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: mütter
+      sound: /Soundfiles/Words/muetter.mp3
+      roman: muetter
+      split:
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: ü
+          sound: /Soundfiles/Alphabet/ue.mp3
+          roman: ue
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: mutter
+      sound: /Soundfiles/Words/mutter.mp3
+      roman: mutter
+      split:
+        - char: m
+          sound: /Soundfiles/Alphabet/m.mp3
+          roman: m
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: söhne
+      sound: /Soundfiles/Words/soehne.mp3
+      roman: soehne
+      split:
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: ö
+          sound: /Soundfiles/Alphabet/oe.mp3
+          roman: oe
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+
+    - char: sohn
+      sound: /Soundfiles/Words/sohn.mp3
+      roman: sohn
+      split:
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: o
+          sound: /Soundfiles/Alphabet/o.mp3
+          roman: o
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: theater
+      sound: /Soundfiles/Words/theater.mp3
+      roman: theater
+      split:
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: studieren
+      sound: /Soundfiles/Words/studieren.mp3
+      roman: studieren
+      split:
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    - char: unbekannt
+      sound: /Soundfiles/Words/unbekannt.mp3
+      roman: unbekannt
+      split:
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: k
+          sound: /Soundfiles/Alphabet/k.mp3
+          roman: k
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+
+    - char: universität
+      sound: /Soundfiles/Words/universitaet.mp3
+      roman: universitaet
+      split:
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: v
+          sound: /Soundfiles/Alphabet/v.mp3
+          roman: v
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+
+    - char: väter
+      sound: /Soundfiles/Words/vaeter.mp3
+      roman: vaeter
+      split:
+        - char: v
+          sound: /Soundfiles/Alphabet/v.mp3
+          roman: v
+        - char: ä
+          sound: /Soundfiles/Alphabet/ae.mp3
+          roman: ae
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: vater
+      sound: /Soundfiles/Words/vater.mp3
+      roman: vater
+      split:
+        - char: v
+          sound: /Soundfiles/Alphabet/v.mp3
+          roman: v
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: zerstören
+      sound: /Soundfiles/Words/zerstoeren.mp3
+      roman: zerstoeren
+      split:
+        - char: z
+          sound: /Soundfiles/Alphabet/z.mp3
+          roman: z
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: ö
+          sound: /Soundfiles/Alphabet/oe.mp3
+          roman: oe
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+
+    
