@@ -1,0 +1,259 @@
+---
+Title: English
+Font: /Font/english.ttf
+---
+Stages:
+  Alphabet:
+    - char: a
+      sound: /Soundfiles/Alphabet/a.mp3
+      roman: a
+    - char: b
+      sound: /Soundfiles/Alphabet/b.mp3
+      roman: b
+    - char: c
+      sound: /Soundfiles/Alphabet/c.mp3
+      roman: c
+    - char: d
+      sound: /Soundfiles/Alphabet/d.mp3
+      roman: d
+    - char: e
+      sound: /Soundfiles/Alphabet/e.mp3
+      roman: e
+    - char: f
+      sound: /Soundfiles/Alphabet/f.mp3
+      roman: f
+    - char: g
+      sound: /Soundfiles/Alphabet/g.mp3
+      roman: g
+    - char: h
+      sound: /Soundfiles/Alphabet/h.mp3
+      roman: h
+    - char: i
+      sound: /Soundfiles/Alphabet/i.mp3
+      roman: i
+    - char: j
+      sound: /Soundfiles/Alphabet/j.mp3
+      roman: j
+    - char: k
+      sound: /Soundfiles/Alphabet/k.mp3
+      roman: k
+    - char: l
+      sound: /Soundfiles/Alphabet/l.mp3
+      roman: l
+    - char: m
+      sound: /Soundfiles/Alphabet/m.mp3
+      roman: m
+    - char: n
+      sound: /Soundfiles/Alphabet/n.mp3
+      roman: n
+    - char: o
+      sound: /Soundfiles/Alphabet/o.mp3
+      roman: o
+    - char: p
+      sound: /Soundfiles/Alphabet/p.mp3
+      roman: p
+    - char: q
+      sound: /Soundfiles/Alphabet/q.mp3
+      roman: q
+    - char: r
+      sound: /Soundfiles/Alphabet/r.mp3
+      roman: r
+    - char: s
+      sound: /Soundfiles/Alphabet/s.mp3
+      roman: s
+    - char: t
+      sound: /Soundfiles/Alphabet/t.mp3
+      roman: t
+    - char: u
+      sound: /Soundfiles/Alphabet/u.mp3
+      roman: u
+    - char: v
+      sound: /Soundfiles/Alphabet/v.mp3
+      roman: v
+    - char: w
+      sound: /Soundfiles/Alphabet/w.mp3
+      roman: w
+    - char: x
+      sound: /Soundfiles/Alphabet/x.mp3
+      roman: x
+    - char: y
+      sound: /Soundfiles/Alphabet/y.mp3
+      roman: y
+    - char: z
+      sound: /Soundfiles/Alphabet/z.mp3
+      roman: z
+  Words:
+    - char: ahead
+      sound: /Soundfiles/Words/ahead.mp3
+      roman: ahead
+      split:
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+
+    - char: badge
+      sound: /Soundfiles/Words/badge.mp3
+      roman: badge
+      split:
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: d
+          sound: /Soundfiles/Alphabet/d.mp3
+          roman: d
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+
+    - char: buy
+      sound: /Soundfiles/Words/buy.mp3
+      roman: buy
+      split:
+        - char: b
+          sound: /Soundfiles/Alphabet/b.mp3
+          roman: b
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: y
+          sound: /Soundfiles/Alphabet/y.mp3
+          roman: y
+
+    - char: father
+      sound: /Soundfiles/Words/father.mp3
+      roman: father
+      split:
+        - char: f
+          sound: /Soundfiles/Alphabet/f.mp3
+          roman: f
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+
+    - char: giant
+      sound: /Soundfiles/Words/giant.mp3
+      roman: giant
+      split:
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: i
+          sound: /Soundfiles/Alphabet/i.mp3
+          roman: i
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: n
+          sound: /Soundfiles/Alphabet/n.mp3
+          roman: n
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+
+    - char: pleasure
+      sound: /Soundfiles/Words/pleasure.mp3
+      roman: pleasure
+      split:
+        - char: p
+          sound: /Soundfiles/Alphabet/p.mp3
+          roman: p
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+        - char: a
+          sound: /Soundfiles/Alphabet/a.mp3
+          roman: a
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: e
+          sound: /Soundfiles/Alphabet/e.mp3
+          roman: e
+
+    - char: school
+      sound: /Soundfiles/Words/school.mp3
+      roman: school
+      split:
+        - char: s
+          sound: /Soundfiles/Alphabet/s.mp3
+          roman: s
+        - char: c
+          sound: /Soundfiles/Alphabet/c.mp3
+          roman: c
+        - char: h
+          sound: /Soundfiles/Alphabet/h.mp3
+          roman: h
+        - char: o
+          sound: /Soundfiles/Alphabet/o.mp3
+          roman: o
+        - char: o
+          sound: /Soundfiles/Alphabet/o.mp3
+          roman: o
+        - char: l
+          sound: /Soundfiles/Alphabet/l.mp3
+          roman: l
+
+    - char: yogurt
+      sound: /Soundfiles/Words/yogurt.mp3
+      roman: yogurt
+      split:
+        - char: y
+          sound: /Soundfiles/Alphabet/y.mp3
+          roman: y
+        - char: o
+          sound: /Soundfiles/Alphabet/o.mp3
+          roman: o
+        - char: g
+          sound: /Soundfiles/Alphabet/g.mp3
+          roman: g
+        - char: u
+          sound: /Soundfiles/Alphabet/u.mp3
+          roman: u
+        - char: r
+          sound: /Soundfiles/Alphabet/r.mp3
+          roman: r
+        - char: t
+          sound: /Soundfiles/Alphabet/t.mp3
+          roman: t
+    
+
+    
