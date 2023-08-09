@@ -131,7 +131,7 @@ Stages:
         sound: /Soundfiles/Alphabet/kk.mp3
         roman: kk
       - char: ㄸ
-        sound: /Soundfiles/Alphabet/tt.mp3
+        sound: /Soundfiles/Alphabet/dd.mp3
         roman: tt
       - char: ㅃ
         sound: /Soundfiles/Alphabet/pp.mp3
