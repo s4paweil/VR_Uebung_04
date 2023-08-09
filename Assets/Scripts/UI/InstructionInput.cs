@@ -10,6 +10,7 @@ public class InstructionInput : MonoBehaviour
 {
     private RectTransform _rectTransform;
     private Image _higlight;
+    private Image _answer;
 
     private TextMeshProUGUI _l;
     private TextMeshProUGUI _t;
@@ -19,12 +20,15 @@ public class InstructionInput : MonoBehaviour
 
     private AudioClip _audioClip;
 
+    private KeyCode solution;
+    private KeyCode guess;
 
     // Start is called before the first frame update
     void Awake()
     {
         _rectTransform = transform.GetComponent<RectTransform>();
         _higlight = transform.Find("fx").Find("inner").GetComponent<Image>();
+        _answer = transform.Find("fx").Find("outer").GetComponent<Image>();
         _l = transform.Find("l").GetComponent<TextMeshProUGUI>();
         _t = transform.Find("t").GetComponent<TextMeshProUGUI>();
         _r = transform.Find("r").GetComponent<TextMeshProUGUI>();
@@ -58,12 +62,55 @@ public class InstructionInput : MonoBehaviour
         _b.SetText(b);
     }
 
+    public void SetSolution(KeyCode k)
+    {
+        solution = k;
+    }
+    
+    public void SetGuess(KeyCode k)
+    {
+        guess = k;
+    }
+
+    public KeyCode GetSolution()
+    {
+        return solution;
+    }
+
+    public bool compareSolution(KeyCode k)
+    {
+        return solution.Equals(k);
+    }
+
+    public bool ValidInput()
+    {
+        return solution.Equals(guess);
+    }
+
     public void pulse()
     {
         _rectTransform.localScale = new Vector3(1.2f,1.2f,1.2f);
         _higlight.color = Color.black;
     }
     
+    public void red()
+    {
+        _answer.color = Color.red;
+        _answer.fillCenter = true;
+    }
+    
+    public void green()
+    {
+        _answer.color = Color.green;
+        _answer.fillCenter = true;
+    }
+    
+    public void white()
+    {
+        _answer.color = Color.white;
+        _answer.fillCenter = true;
+    }
+
     
     public void playSound()
     {
@@ -72,5 +119,4 @@ public class InstructionInput : MonoBehaviour
 
     }
     
-
 }

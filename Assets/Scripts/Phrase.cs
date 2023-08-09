@@ -1,4 +1,6 @@
-﻿namespace YamlDotNet
+﻿using System.Collections.Generic;
+
+namespace YamlDotNet
 {
     public class Phrase
     {
@@ -7,5 +9,6 @@
         public string sound;
         public string combination;
         public string eqphonem;
+        public List<Phrase> split;
     }
 }

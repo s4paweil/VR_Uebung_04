@@ -42,6 +42,7 @@ public class LevelItem : MonoBehaviour, IPointerClickHandler
         var yamlScalarNode = new YamlScalarNode(key);
         return yamlMappingNode.Children.TryGetValue(yamlScalarNode, out var c) ? c.ToString() : "";
     }
+    
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -58,8 +59,25 @@ public class LevelItem : MonoBehaviour, IPointerClickHandler
                     combination = ReadValue(v, "comb"),
                     roman = ReadValue(v, "roman"),
                     eqphonem = ReadValue(v, "eqphonem"),
-                    sound = ReadValue(v, "sound")
+                    sound = ReadValue(v, "sound"),
+                    split = new List<Phrase>()
                 };
+
+    
+                var split  = v.Children.TryGetValue(new YamlScalarNode("split"), out var c) ? (YamlSequenceNode)c : new YamlSequenceNode();
+                foreach (var n2 in split.Children)
+                {
+                    var v2 = (YamlMappingNode)n2;
+                    var p2 = new Phrase
+                    {
+                        characters = ReadValue(v2, "char"),
+                        combination = ReadValue(v2, "comb"),
+                        roman = ReadValue(v2, "roman"),
+                        eqphonem = ReadValue(v2,"eqphonem"),
+                        sound = ReadValue(v2, "sound"),
+                    };
+                    p.split.Add(p2);
+                }
                 phraseList.Add(p);
             }
 
