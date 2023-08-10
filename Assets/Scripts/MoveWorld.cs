@@ -159,7 +159,6 @@ public class MoveWorld : MonoBehaviour
         {
             Instantiate(obstacle, new Vector3(0, 0, transform.childCount-2), Quaternion.identity, transform);
         }
-        Debug.Log(nextInputs.Count);
     }
     
     private GameObject GetRandomObstacle(List<GameObject> obstacles)
