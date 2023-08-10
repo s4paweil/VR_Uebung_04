@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1269,15 +1269,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bottom_leftObstacles:
   - {fileID: 5235934821645263587, guid: 373ddf2d13f654c41b8c95a8c9b03ead, type: 3}
-  bottom_middleObstacles: []
-  bottom_rightObstacles: []
-  middle_leftObstacles: []
-  middle_middleObstacles: []
-  middle_rightObstacles: []
-  top_leftObstacles: []
-  top_middleObstacles: []
-  top_rightObstacles: []
-  noObstacles: []
+  bottom_middleObstacles:
+  - {fileID: 5235934821645263587, guid: efe82fd32f66f4e459e78d6c38781b1f, type: 3}
+  bottom_rightObstacles:
+  - {fileID: 5235934821645263587, guid: 38cb6fb13a8223743857b209f3719e21, type: 3}
+  middle_leftObstacles:
+  - {fileID: 5235934821645263587, guid: ee0f221750820554298b8fafcce40321, type: 3}
+  - {fileID: 5235934821645263587, guid: 7331083b28f4d0048a70e4159a47ca0e, type: 3}
+  middle_middleObstacles:
+  - {fileID: 5235934821645263587, guid: ff549cf14d860b844949bf2b2244d870, type: 3}
+  - {fileID: 5235934821645263587, guid: 458eabd8b9006bb48b63a6efaa2832b8, type: 3}
+  - {fileID: 5235934821645263587, guid: 3531acdc471bca64bb60b08cba0d73d4, type: 3}
+  middle_rightObstacles:
+  - {fileID: 5235934821645263587, guid: 152b4f267eead484197637d0161841a9, type: 3}
+  - {fileID: 5235934821645263587, guid: 6824d009e7800f5439ca252ca4b57a49, type: 3}
+  top_leftObstacles:
+  - {fileID: 5235934821645263587, guid: 8fa2845392bbbe541bf19c1e29384601, type: 3}
+  - {fileID: 5235934821645263587, guid: efc9b834106f8ce429d02f2a4d5979ef, type: 3}
+  - {fileID: 5235934821645263587, guid: b2d1bfbcf208fc345a04b2b0cf84093d, type: 3}
+  top_middleObstacles:
+  - {fileID: 5235934821645263587, guid: 400612572ff848444beb696f2e4a3a4c, type: 3}
+  - {fileID: 5235934821645263587, guid: abef5baa32383d24aa1e5e6841fb4dd6, type: 3}
+  - {fileID: 5235934821645263587, guid: ce2fb767eb89a054eb157c1dcb1b193d, type: 3}
+  - {fileID: 5235934821645263587, guid: f1ca124ad6d9bef4ab537c19ba8364b8, type: 3}
+  top_rightObstacles:
+  - {fileID: 5235934821645263587, guid: ef3bce4a18a9e9748a5b5b76ade37354, type: 3}
+  - {fileID: 5235934821645263587, guid: 6303461decb9f6347a01a19d1447220f, type: 3}
+  - {fileID: 5235934821645263587, guid: 4d3fba2e0e7a0e14ca34949f9a59d9d0, type: 3}
+  noObstacles:
+  - {fileID: 4091184473855794826, guid: 3824021266a42b94782fa67f64f68558, type: 3}
+  - {fileID: 2156675281569913274, guid: 0fd107935e8455044ae094b1f27428ad, type: 3}
+  - {fileID: 3269084046773944845, guid: 56cbce7ddcad3ee419adccde26736056, type: 3}
+  - {fileID: 3269084046773944845, guid: e233b2481aa589543ac806725c0b2608, type: 3}
+  - {fileID: 3451344426809695514, guid: 6444feaf3f0c93443842c7a742ff1d60, type: 3}
+  - {fileID: 2156675281569913274, guid: f61604842366c6f43b4b5dce0172cb64, type: 3}
+  - {fileID: 3269084046773944845, guid: 4b810a715c7693347a3490412accde97, type: 3}
+  - {fileID: 3451344426809695514, guid: fa0e02332a9aded4e91552ea44416712, type: 3}
+  - {fileID: 6923868429936896493, guid: f0cc8cfd476c71a4fbf306686cef8155, type: 3}
 --- !u!1001 &1887554878
 PrefabInstance:
   m_ObjectHideFlags: 0

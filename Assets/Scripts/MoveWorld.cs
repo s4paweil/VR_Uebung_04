@@ -6,7 +6,6 @@ using UnityEngine.Serialization;
 public class MoveWorld : MonoBehaviour
 {
 
-    // Hindernislisten für die verschiedenen Positionen
     public List<GameObject> bottom_leftObstacles;
     public List<GameObject> bottom_middleObstacles;
     public List<GameObject> bottom_rightObstacles;
@@ -18,36 +17,22 @@ public class MoveWorld : MonoBehaviour
     public List<GameObject> top_rightObstacles;
     public List<GameObject> noObstacles;
 
-    // Liste mit möglichen Inputs
     private List<string> possibleInputs = new List<string> { "up", "down", "left", "right" };
 
-    // Die (korrekte) Position des Charakters auf der 3x3 Ebene (angenommen die Mitte ist (0,0))
     private int currentX;
     private int currentY;
     
-    // Liste der Inputs
     private List<string> nextInputs;
     
-    // Counter um Elemente zwischen Hindernissen einzufügen (gibt an wie viele Blöcke zwischen Hindernissen sein sollen)
     private int obstacleSpace = 4;
     private int currentObstacleSpace = 0;
     
     // Start is called before the first frame update
     void Start()
     {
-        int desiredListLength = 10; // Länge der Liste der zufälligen Inputs
-
-        // Erzeuge die Liste mit zufälligen Inputs der gewünschten Länge
-        nextInputs = GenerateRandomInputs(desiredListLength);
         
-        // Beispiel: Gib die erzeugte Liste der zufälligen Inputs aus
-        /*
-        foreach (string input in nextInputs)
-        {
-            Debug.Log("Next Input: " + input);
-        }
-        */
-
+        nextInputs = GenerateRandomInputs(10);
+        
         // Setze Charakter auf Ausgangsposition (Mitte bei (0,0))
         currentX = 0;
         currentY = 0;
@@ -93,9 +78,7 @@ public class MoveWorld : MonoBehaviour
 
         if (currentObstacleSpace == 0 && nextInputs.Count > 0)
         {
-            // Hole den nächsten korrekten Input aus der Liste
             string nextInput = nextInputs[0];
-            // Entferne den aktuellen Input aus der Liste, um zum nächsten zu gehen
             nextInputs.RemoveAt(0);
             
             // Bewege den Charakter entsprechend des Inputs
@@ -164,16 +147,19 @@ public class MoveWorld : MonoBehaviour
 
             currentObstacleSpace = obstacleSpace;
         }
-
+        
         if (nextInputs.Count == 0)
         {
             obstacle = GetRandomObstacle(noObstacles);
+            nextInputs = GenerateRandomInputs(10);
+
         }
 
         if (obstacle != null)
         {
             Instantiate(obstacle, new Vector3(0, 0, transform.childCount-2), Quaternion.identity, transform);
         }
+        Debug.Log(nextInputs.Count);
     }
     
     private GameObject GetRandomObstacle(List<GameObject> obstacles)
